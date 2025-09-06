@@ -34,13 +34,14 @@ const App = () => {
    }
   return (
     <div>
-      <form>
+      
        Search
        <br/>
        <input type="text" value={movie} onChange={(e)=>{
         setMovie(e.target.value)
        }}/>
        <button type="submit" onClick={fetchmovies} >Search</button>
+       <form>
        {error && <p className="error">{error}</p>}
        <ul>
         {fullinfo.map((info)=>(
@@ -54,6 +55,7 @@ const App = () => {
         ))}
        </ul>
        </form>
+      
     </div>
   )
 }
