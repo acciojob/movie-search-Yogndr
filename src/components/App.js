@@ -44,6 +44,7 @@ const App = () => {
        
        {error && <p className="error">{error}</p>}
        <form>
+        <nav>
        <ul>
         {fullinfo.map((info)=>(
           <li key={info.imdbID}>
@@ -55,6 +56,7 @@ const App = () => {
 
         ))}
        </ul>
+       </nav>
        </form>
       
     </div>
