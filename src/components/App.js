@@ -34,6 +34,7 @@ const App = () => {
    }
   return (
     <div>
+      <form>
        Search
        <br/>
        <input type="text" value={movie} onChange={(e)=>{
@@ -52,6 +53,7 @@ const App = () => {
 
         ))}
        </ul>
+       </form>
     </div>
   )
 }
