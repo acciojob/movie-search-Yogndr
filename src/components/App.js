@@ -41,8 +41,9 @@ const App = () => {
         setMovie(e.target.value)
        }}/>
        <button type="submit" onClick={fetchmovies} >Search</button>
-       <form>
+       
        {error && <p className="error">{error}</p>}
+       <form>
        <ul>
         {fullinfo.map((info)=>(
           <li key={info.imdbID}>
